@@ -69,8 +69,8 @@ html {
  }
 
  .text-center{
-     padding-bottom: 40px;
- }
+    text-align: center;
+}
 
  .heading-padding {
      padding-bottom: 40px;
