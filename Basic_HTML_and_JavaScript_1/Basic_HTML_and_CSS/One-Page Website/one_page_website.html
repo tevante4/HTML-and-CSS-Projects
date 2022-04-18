@@ -5,6 +5,8 @@
 		<title>Rogue Companyt Season 3 </title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="./CSS/one_page_website.css">
+		<link rel="stylesheet" href="./CSS/lightbox.css">
+		<script src="JS/lightbox.js" defer></script>
 	</head>
 	<body>
 
@@ -45,8 +47,8 @@
 					<!-- PHOTO CONTAINER 1 -->
 					<div class="photo-container">
 						<div class="photo">
-							<img src="https://cdn1.epicgames.com/salesEvent/salesEvent/RoCo-EGS-S3StarterPack-LandscapeOfferImg-2560x1440_2560x1440-e128c88b756cc1149334d71544832c6c" alt="Season 3 Stater Pack">
-							<div class="photo-overlay">
+							<img src="photos/img1.jpeg" alt="Season 3 Stater Pack">
+							<div class="photo-overlay"onclick="openModal();currentSlide(1)">
 								<h3 class="white-head">Click to Enlarge</h3>
 								<p>Season 3; New skins, new character quips!</p>
 							</div>
@@ -57,8 +59,8 @@
 					<!-- PHOTO CONTAINER 2 -->
 					<div class="photo-container">
 						<div class="photo">
-							<img src="https://i.ytimg.com/vi/fxrFwYSwvWI/maxresdefault.jpg" alt="Season 3 Battle Pass Skins">
-							<div class="photo-overlay">
+							<img src="photos/img2.jpeg" alt="Season 3 Battle Pass Skins">
+							<div class="photo-overlay"onclick="openModal();currentSlide(2)">
 								<h3 class="white-head">Click to Enlarge</h3>
 								<p>Season 3; New skins, new character quips!</p>
 							</div>
@@ -69,8 +71,8 @@
 					<!-- PHOTO CONTAINER 3 -->
 					<div class="photo-container">
 						<div class="photo">
-							<img src="https://www.comicsunearthed.com/wp-content/uploads/2021/09/Runway-Illustration.jpg" alt="RUNWAY'S New Guns">
-							<div class="photo-overlay">
+							<img src="photos/img3.jpeg" alt="RUNWAY'S New Guns">
+							<div class="photo-overlay"onclick="openModal();currentSlide(3)">
 								<h3 class="white-head">Click to Enlarge</h3>
 								<p>Season 3; New skins, new character quips!</p>
 							</div>
@@ -81,8 +83,8 @@
 					<!-- PHOTO CONTAINER 4 -->
 					<div class="photo-container">
 						<div class="photo">
-							<img src="https://attackofthefanboy.com/wp-content/uploads/2022/01/Rogue-Company-Glimpse-Update.jpg" alt="Catch a Glimpse of Glimpse">
-							<div class="photo-overlay">
+							<img src="photos/img4.jpeg" alt="Catch a Glimpse of Glimpse">
+							<div class="photo-overlay"onclick="openModal();currentSlide(4)">
 								<h3 class="white-head">Click to Enlarge</h3>
 								<p>Season 3; New skins, new character quips!</p>
 							</div>
@@ -94,7 +96,58 @@
 			</div>
 		</sections>
 		<!-- END PHOTOS -->
-
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+  
+      <div class="mySlides">
+        <div class="numbertext">1 / 4</div>
+        <img src="photos/img1.jpeg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">2 / 4</div>
+        <img src="photos/img2.jpeg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">3 / 4</div>
+        <img src="photos/img3.jpeg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">4 / 4</div>
+        <img src="photos/img4.jpeg" style="width:100%">
+      </div>
+  
+      <!-- Next/previous controls -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+      <!-- Caption text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+  
+      <!-- Thumbnail image controls -->
+      <div class="column">
+        <img class="demo" src="photos/img1.jpeg" onclick="currentSlide(1)" alt="Nature">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="photos/img2.jpeg" onclick="currentSlide(2)" alt="Snow">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="photos/img3.jpeg" onclick="currentSlide(3)" alt="Mountains">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="photos/img4.jpeg" onclick="currentSlide(4)" alt="Lights">
+      </div>
+    </div>
+  </div>
 		<iframe width="560" height="315" src="https://www.youtube.com/embed/nW0O9IuVqwo" title="YouTube video player" style="border:0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 		<!-- CONTACT -->
